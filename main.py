@@ -102,3 +102,6 @@ def masse_und_toleranz_berechnen(nennmass, toleranzklasse):
     formatiertes_hoechstmass = format(hoechstmass, ".3f")
     # Berechnung der Toleranz
     toleranz = hoechstmass - mindestmass
+    # Aufruf der Methode fuer die Ausgabe in Tabellenformat
+    tabelle_anzeigen(toleranzklasse, nennmass, oberes_abmass, unteres_abmass, formatiertes_hoechstmass,
+                     formatiertes_mindestmass, toleranz)
