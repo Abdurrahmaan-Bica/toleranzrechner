@@ -37,3 +37,59 @@ def tabelle_anzeigen(toleranzklasse,nennmass,oberes_abmass,unteres_abmass,format
                 f"Ø{formatiertes_mindestmass}", f"{toleranz} μm"]]
     print("Grenzabmaße in μm für Nennmaße in mm (nach DIN ISO 286)")
     print(tabulate(tabelle, headers="firstrow", tablefmt="fancy_grid"))
+
+# Die Methode *masse_und_toleranz_berechnen* berechnet die Maße(oberes Abmaß & unteres Abmaß, Höchstmaß, Mindestmaß) sowie die Toleranz.
+def masse_und_toleranz_berechnen(nennmass, toleranzklasse):
+    oberes_abmass = unteres_abmass = 0
+
+    # Toleranzklasse 1 entspricht H6
+    if toleranzklasse == 1:
+        if nennmass >= 1 and nennmass <= 3:
+            oberes_abmass = +6
+        elif nennmass >= 4 and nennmass <= 6:
+            oberes_abmass = +8
+        elif nennmass >= 7 and nennmass <= 10:
+            oberes_abmass = +9
+        elif nennmass >= 11 and nennmass <= 18:
+            oberes_abmass = +11
+        elif nennmass >= 19 and nennmass <= 30:
+            oberes_abmass = +13
+
+    # Toleranzklasse 2 entspricht H8
+    elif toleranzklasse == 2:
+        if nennmass >= 1 and nennmass <= 3:
+            oberes_abmass = +14
+        elif nennmass >= 4 and nennmass <= 6:
+            oberes_abmass = +18
+        elif nennmass >= 7 and nennmass <= 10:
+            oberes_abmass = +22
+        elif nennmass >= 11 and nennmass <= 18:
+            oberes_abmass = +27
+        elif nennmass >= 19 and nennmass <= 30:
+            oberes_abmass = +33
+
+    # Toleranzklasse 3 entspricht g6
+    elif toleranzklasse == 3:
+        if nennmass >= 1 and nennmass <= 3:
+            oberes_abmass, unteres_abmass = -2, -8
+        elif nennmass >= 4 and nennmass <= 6:
+            oberes_abmass, unteres_abmass = -4, -12
+        elif nennmass >= 7 and nennmass <= 10:
+            oberes_abmass, unteres_abmass = -5, -14
+        elif nennmass >= 11 and nennmass <= 18:
+            oberes_abmass, unteres_abmass = -6, -17
+        elif nennmass >= 19 and nennmass <= 30:
+            oberes_abmass, unteres_abmass = -7, -20
+
+    # Toleranzklasse 4 entspricht r6
+    elif toleranzklasse == 4:
+        if nennmass >= 1 and nennmass <= 3:
+            oberes_abmass, unteres_abmass = +16, +10
+        elif nennmass >= 4 and nennmass <= 6:
+            oberes_abmass, unteres_abmass = +23, +15
+        elif nennmass >= 7 and nennmass <= 10:
+            oberes_abmass, unteres_abmass = +28, +19
+        elif nennmass >= 11 and nennmass <= 18:
+            oberes_abmass, unteres_abmass = +34, +23
+        elif nennmass >= 19 and nennmass <= 30:
+            oberes_abmass, unteres_abmass = +41, +28
