@@ -35,6 +35,7 @@ def tabelle_anzeigen(toleranzklasse,nennmass,oberes_abmass,unteres_abmass,format
     tabelle = [["Toleranzklasse","Nennmaß", "Oberes Abmaß", "Unteres Abmaß", "Mindestmaß", "Höchstmaß", "Toleranz"],
                [f"{toleranzklasse}",f"{nennmass} mm", f"{oberes_abmass} μm", f"{unteres_abmass} μm", f"Ø{formatiertes_hoechstmass}",
                 f"Ø{formatiertes_mindestmass}", f"{toleranz} μm"]]
+    print("Hinweis zu den Toleranzklassen: \n" + "Toleranzklasse 1 = H6\n" + "Toleranzklasse 2 = H8\n" + "Toleranzklasse 3 = g6\n" + "Toleranzklasse 4 = r6")
     print("Grenzabmaße in μm für Nennmaße in mm (nach DIN ISO 286)")
     print(tabulate(tabelle, headers="firstrow", tablefmt="fancy_grid"))
 
