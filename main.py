@@ -105,3 +105,42 @@ def masse_und_toleranz_berechnen(nennmass, toleranzklasse):
     # Aufruf der Methode fuer die Ausgabe in Tabellenformat
     tabelle_anzeigen(toleranzklasse, nennmass, oberes_abmass, unteres_abmass, formatiertes_hoechstmass,
                      formatiertes_mindestmass, toleranz)
+
+def main():
+    while True:
+        try:
+            haupt_menu_anzeigen()
+            user_input = int(input("Ihre Auswahl (1-2): "))
+
+            if user_input == 1:
+                toleranz_menu_anzeigen()
+                klasse_input = int(input("Ihre Auswahl (1-5): "))
+
+                if klasse_input in [1, 2, 3, 4]:
+                    nennmass_input = float(input("Geben Sie bitte das Nennmaß ohne Einheit ein: \n"))
+                    validiertes_nennmass = nennmass_ueberpruefen(nennmass_input)
+                    if validiertes_nennmass is not None:
+                        masse_und_toleranz_berechnen(validiertes_nennmass,klasse_input)
+                elif klasse_input == 5:
+                    continue
+                    # print("Auf Wiedersehen \U0001F642")
+                    # break
+                else:
+                    print("Ungültige Auswahl! Bitte wählen Sie eine Nummer von 1 bis 5.")
+
+            elif user_input == 2:
+                print("Auf Wiedersehen \U0001F642")
+                break
+            else:
+                print("Ungültige Eingabe! Bitte wählen Sie entweder 1 oder 2.")
+                print()
+
+        except ValueError:
+            print("Bitte geben Sie nur Zahlen ein. Versuchen Sie es nochmal.")
+            print()
+        except Exception as e:
+            print(f"Ein Fehler ist aufgetreten: {e}")
+            print()
+
+if __name__ == "__main__":
+    main()
