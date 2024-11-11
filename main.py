@@ -93,3 +93,12 @@ def masse_und_toleranz_berechnen(nennmass, toleranzklasse):
             oberes_abmass, unteres_abmass = +34, +23
         elif nennmass >= 19 and nennmass <= 30:
             oberes_abmass, unteres_abmass = +41, +28
+
+    # Berechnung & Formatierung von Maßen
+    # Damit das Mindestmaß und Höchstmaß mit 3 Nachkommastellen angezeigt werden, werden die Maßen formatiert.
+    mindestmass = nennmass + unteres_abmass
+    hoechstmass = nennmass + oberes_abmass
+    formatiertes_mindestmass = format(mindestmass, ".3f")
+    formatiertes_hoechstmass = format(hoechstmass, ".3f")
+    # Berechnung der Toleranz
+    toleranz = hoechstmass - mindestmass
