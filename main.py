@@ -28,3 +28,12 @@ def nennmass_ueberpruefen(nennmass):
     else:
         print(f"Ungültiges Nennmaß!Das eingegebene Nennmaß von {nennmass} mm ist außerhalb des gültigen Intervalls [1-30].")
         return None
+
+# Die Methode *tabelle_anzeigen* zeigt die Maßen und die Toleranz in einem Tabellenformat.
+def tabelle_anzeigen(toleranzklasse,nennmass,oberes_abmass,unteres_abmass,formatiertes_hoechstmass,formatiertes_mindestmass,toleranz):
+    # Tabellenformat
+    tabelle = [["Toleranzklasse","Nennmaß", "Oberes Abmaß", "Unteres Abmaß", "Mindestmaß", "Höchstmaß", "Toleranz"],
+               [f"{toleranzklasse}",f"{nennmass} mm", f"{oberes_abmass} μm", f"{unteres_abmass} μm", f"Ø{formatiertes_hoechstmass}",
+                f"Ø{formatiertes_mindestmass}", f"{toleranz} μm"]]
+    print("Grenzabmaße in μm für Nennmaße in mm (nach DIN ISO 286)")
+    print(tabulate(tabelle, headers="firstrow", tablefmt="fancy_grid"))
