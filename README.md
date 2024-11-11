@@ -13,8 +13,35 @@ The Python Toleranzrechner is a Python-based application that allows users to in
 
 ## 🔧 Installation
 ### Prerequisites
+<ul>
+  <li>Python 3.x installed on your system.</li>
+  <li>Basic knowledge of how to run Python scripts.</li>
+</ul>
 
 ### Steps to install
+<ol>
+  <li>Clone the Repository</li>
+  <ul>
+    <li>git clone <a href="https://github.com/Abdurrahmaan-Bica/toleranzrechner.git">https://github.com/Abdurrahmaan-Bica/toleranzrechner.git</a></li>
+    <li>cd toleranzrechner (<strong>project directory</strong>)</li>
+  </ul>
+  <br>
+   <li>Ensure Python Environment</li>
+   <ul>
+    <li>You can verify this by running: <strong>python --version</strong></li>
+  </ul>
+  <br>
+  <li>Navigate to Project Directory</li>
+   <ul>
+    <li>Change to the directory where the <strong>main.py</strong> is located.</li>
+  </ul>
+  <br>
+  <li>Run the Application</li>
+   <ul>
+    <li>Execute the following command to start the calculator: <strong>python main.py</strong></li>
+  </ul>
+</ol>
+
 
 ## 🚀Usage
 ### Running the Calculator
