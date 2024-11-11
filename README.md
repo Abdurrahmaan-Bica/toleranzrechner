@@ -49,20 +49,83 @@ The Python Toleranzrechner is a Python-based application that allows users to in
   <li>Start the Calculator</li>
   <ul>
     <li>Run the main.py using Python. The application will prompt you to select an option.</li>
-    <img href=""alt ="Main Menu"></img>
+    <br>
+    <img src="Main_Menu.png"alt ="Main Menu"></img>
+    
+  </ul>
+  <br>
+  <li>Select a Tolerance Class</li>
+  <ul>
+    <li>You will be presented with a list of options. Choose a number corresponding to the class you would like to perform calculations.</li>
+    <br>
+    <img src="Tolerance_Classes_Menu.png"alt ="Tolerance Classes Menu"></img>
+  </ul>
+  <br>
+  <li>Input the Nominal Dimension</li>
+  <ul>
+    <li>After your Input, you will be able to see the results.</li>
+    <br>
+    <img src="Nominal_Dimension_Input.png"alt ="Nominal Dimension Input"></img>
+  </ul>
+  <br>
+  <li>Review Results</li>
+  <ul>
+    <li>After your Input, the results will be displayed in a table.</li>
+    <br>
+    <img src="Feedback.png"alt ="Results"></img>
+  </ul>
+  <br>
+   <li>Continue or Exit</li>
+  <ul>
+    <li>You will have the option to start a calculation or exit the program.</li>
+    <br>
+    <img src="Continue_Exit.png"alt ="Continue or Exit"></img>
+    <br>
+    <li>If exit is selected, a message is displayed.</li>
+    <br>
+    <img src="Exit.png"alt ="Exit"></img>
+    <br>
+    <li>Otherwise it returns to the main menu and the program starts all over again.</li>
+    <br>
+    <img src="Continue.png"alt ="Continue"></img>
+    <br>
+    
   </ul>
   <br>
   
 </ol>
 
 ## 📂 File Structure
+<ul>
+  <li>
+    <strong>main.py</strong>: The main script that runs program. Handles user input, displays menu options, and provides feedback.Provides functions that perform calculations and display results.
+  </li>
+</ul>
 
-
-## 🔍 Functions Overview
-
-
-## 🧪 Testing
 ## 🤝 Contributing
+<ul>
+  Contributions to the <strong>Python Toleranzrechner</strong> are welcome! If you'd like to contribute, please follow these guidelines:
+  <br>
+  <li>
+    Fork the Repository: Create your own fork of the repository.
+  </li>
+  <li>
+  Clone Your Fork: Clone the forked repository to your local machine.
+  </li>
+  <li>
+  Create a Branch: Create a new branch for your changes.
+  </li>
+  <li>
+  Make Your Changes: Implement your changes or improvements.
+  </li>
+  <li>
+  Test Your Changes: Ensure your changes work as expected and do not introduce bugs.
+  </li>
+  <li>
+  Submit a Pull Request: Push your changes to your fork and submit a pull request to the original repository
+  </li>
+</ul>
+
 ## 🛠️ Deployment
 
 
