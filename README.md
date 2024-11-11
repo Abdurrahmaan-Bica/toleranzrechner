@@ -45,6 +45,15 @@ The Python Toleranzrechner is a Python-based application that allows users to in
 
 ## 🚀Usage
 ### Running the Calculator
+<ol>
+  <li>Start the Calculator</li>
+  <ul>
+    <li>Run the main.py using Python. The application will prompt you to select an option.</li>
+    <img href=""alt ="Main Menu"></img>
+  </ul>
+  <br>
+  
+</ol>
 
 ## 📂 File Structure
 
