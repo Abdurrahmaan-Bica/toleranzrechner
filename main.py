@@ -3,10 +3,15 @@ from tabulate import tabulate
 
 willkommens_text = Figlet()
 print(willkommens_text.renderText("Python Toleranzrechner"))
-print("======================================================================")
 print("Willkommen zum Toleranzrechner!")
-print("Hinweis: Dieser Rechner wurde getestet, aber die Genauigkeit der Ergebnisse kann nicht garantiert werden.")
-print("======================================================================")
+print("\nBitte beachten Sie die folgenden Hinweise:\n")
+print("🔹 Toleranzklasse 1 = H6")
+print("🔹 Toleranzklasse 2 = H8")
+print("🔹 Toleranzklasse 3 = g6")
+print("🔹 Toleranzklasse 4 = r6")
+print("\n⚠️ Bei der Eingabe von Nennmaß darf man nicht die Einheit eingeben und das Nennmaß muss innerhalb des Intervalls [1-30] mm sein.\n")
+print("🔍Hinweis: Dieser Rechner wurde getestet, aber die Genauigkeit der Ergebnisse kann nicht garantiert werden.")
+print("\n" + "=" * 70)
 
 # Methode für die Hauptmenü
 def haupt_menu_anzeigen():
@@ -35,7 +40,9 @@ def tabelle_anzeigen(toleranzklasse,nennmass,oberes_abmass,unteres_abmass,format
     tabelle = [["Toleranzklasse","Nennmaß", "Oberes Abmaß", "Unteres Abmaß", "Mindestmaß", "Höchstmaß", "Toleranz"],
                [f"{toleranzklasse}",f"{nennmass} mm", f"{oberes_abmass} μm", f"{unteres_abmass} μm", f"Ø{formatiertes_hoechstmass}",
                 f"Ø{formatiertes_mindestmass}", f"{toleranz} μm"]]
-    print("Hinweis zu den Toleranzklassen: \n" + "Toleranzklasse 1 = H6\n" + "Toleranzklasse 2 = H8\n" + "Toleranzklasse 3 = g6\n" + "Toleranzklasse 4 = r6")
+    print()
+    print("===================================ERGEBNIS===================================")
+
     print("Grenzabmaße in μm für Nennmaße in mm (nach DIN ISO 286)")
     print(tabulate(tabelle, headers="firstrow", tablefmt="fancy_grid"))
 
@@ -118,7 +125,7 @@ def main():
                 klasse_input = int(input("Ihre Auswahl (1-5): "))
 
                 if klasse_input in [1, 2, 3, 4]:
-                    nennmass_input = float(input("Geben Sie bitte das Nennmaß ohne Einheit ein: \n"))
+                    nennmass_input = float(input("Geben Sie bitte das Nennmaß (1-30) ein: \n"))
                     validiertes_nennmass = nennmass_ueberpruefen(nennmass_input)
                     if validiertes_nennmass is not None:
                         masse_und_toleranz_berechnen(validiertes_nennmass,klasse_input)
