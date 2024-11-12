@@ -134,17 +134,17 @@ def main():
                     # print("Auf Wiedersehen \U0001F642")
                     # break
                 else:
-                    print("Ungültige Auswahl! Bitte wählen Sie eine Nummer von 1 bis 5.")
+                    print("Ungültige Auswahl! Wählen Sie bitte eine Nummer von 1 bis 5.")
 
             elif user_input == 2:
                 print("Auf Wiedersehen \U0001F642")
                 break
             else:
-                print("Ungültige Eingabe! Bitte wählen Sie entweder 1 oder 2.")
+                print("Ungültige Eingabe! Wählen Sie bitte entweder 1 oder 2.")
                 print()
 
         except ValueError:
-            print("Bitte geben Sie nur Zahlen ein. Versuchen Sie es nochmal.")
+            print("Geben Sie bitte nur Zahlen ein. Versuchen Sie es nochmal.")
             print()
         except Exception as e:
             print(f"Ein Fehler ist aufgetreten: {e}")
