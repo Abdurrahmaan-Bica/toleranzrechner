@@ -131,8 +131,6 @@ def main():
                         masse_und_toleranz_berechnen(validiertes_nennmass,klasse_input)
                 elif klasse_input == 5:
                     continue
-                    # print("Auf Wiedersehen \U0001F642")
-                    # break
                 else:
                     print("Ungültige Auswahl! Wählen Sie bitte eine Nummer von 1 bis 5.")
 
