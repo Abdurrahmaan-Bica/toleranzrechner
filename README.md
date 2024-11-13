@@ -1,5 +1,5 @@
-# Python Toleranzrechner
-Welcome to the Python Toleranzrechner! This is an interactive application designed to help mechanical engineering students, mechatronics engineers, manufacturing professionals, and design engineers who work with machining and precision component design. 
+# Toleranzrechner
+Welcome to the Toleranzrechner! This is an interactive application designed to help mechanical engineering students, mechatronics engineers, manufacturing professionals, and design engineers who work with machining and precision component design. 
 The calculations are based on the standard **DIN ISO 286**, ensuring accurate and standardized results for limit dimensions in technical drawings.
 ## 🔍 Overview
 The Python Toleranzrechner is a Python-based application that allows users to input different nominal dimensions within a range of 1-30 mm and provides outputs such as the upper deviation, lower deviation, maximum limit, minimum limit, and the tolerance range.The application provides the results based on user input and allows them to continue or exit after each calculation.
