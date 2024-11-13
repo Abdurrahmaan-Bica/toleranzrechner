@@ -126,6 +126,8 @@ The Python Toleranzrechner is a Python-based application that allows users to in
   </li>
 </ul>
 
+## 🧪 Testing
+
 ## 🛠️ Deployment
 
 
