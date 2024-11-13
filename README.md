@@ -130,11 +130,11 @@ The Python Toleranzrechner is a Python-based application that allows users to in
 To verify that each function in main.py behaves as expected, tests were conducted.
 ### Testing Functions in main.py:
 <ul>
-    <li>haupt_menu_anzeigen():</li>
-    <li>toleranz_menu_anzeigen():</li>
-    <li>nennmass_ueberpruefen(nennmass):</li>
-    <li>tabelle_anzeigen(toleranzklasse,nennmass,oberes_abmass,unteres_abmass,formatiertes_hoechstmass,formatiertes_mindestmass,toleranz):</li>
-    <li>masse_und_toleranz_berechnen(nennmass, toleranzklasse):</li>
+    <li><strong>haupt_menu_anzeigen():</strong></li>
+    <li><strong>toleranz_menu_anzeigen():</strong></li>
+    <li><strong>nennmass_ueberpruefen(nennmass):</strong></li>
+    <li><strong>tabelle_anzeigen(toleranzklasse,nennmass,oberes_abmass,unteres_abmass,formatiertes_hoechstmass,formatiertes_mindestmass,toleranz):</strong></li>
+    <li><strong>masse_und_toleranz_berechnen(nennmass, toleranzklasse):</strong></li>
 </ul>
 
 
