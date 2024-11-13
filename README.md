@@ -139,7 +139,12 @@ To verify that each function in main.py behaves as expected, tests were conducte
 
 
 ## 🛠️ Deployment
-
+I deployed the Toleranzrechner using Heroku’s dashboard, which offers an intuitive interface for deploying web applications. Here’s the process I followed:
+<ul>
+    <li>
+        Logged into Heroku: I accessed my Heroku account and went to the dashboard. I created a new app and then provided a unique name for the app and chose the appropriate region.
+    </li>
+</ul>
 
 
 
