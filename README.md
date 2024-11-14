@@ -135,7 +135,7 @@ To verify that each function in main.py behaves as expected, tests were conducte
     <li><strong>nennmass_ueberpruefen(nennmass):</strong></li>
     <li><strong>tabelle_anzeigen(toleranzklasse,nennmass,oberes_abmass,unteres_abmass,formatiertes_hoechstmass,formatiertes_mindestmass,toleranz):</strong></li>
     <li><strong>masse_und_toleranz_berechnen(nennmass, toleranzklasse):</strong></li>
-    <li><strong>main():</strong></li>
+
 </ul>
 
 
