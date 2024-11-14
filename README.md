@@ -131,7 +131,11 @@ To verify that each function in main.py behaves as expected, tests were conducte
 ### Testing Functions in main.py:
 <ul>
     <li><strong>haupt_menu_anzeigen():</strong></li>
+    <p>Tested with different inputs, including options that are not listed. Ensured it correctly handles invalid inputs and shows the exception messasges.</p>
+    <br>
     <li><strong>toleranz_menu_anzeigen():</strong></li>
+    <p>Tested with valid and invalid inputs. Ensured it goes do the main menu if the user chooses 5.</p>
+    <br>
     <li><strong>nennmass_ueberpruefen(nennmass):</strong></li>
     <li><strong>tabelle_anzeigen(toleranzklasse,nennmass,oberes_abmass,unteres_abmass,formatiertes_hoechstmass,formatiertes_mindestmass,toleranz):</strong></li>
     <li><strong>masse_und_toleranz_berechnen(nennmass, toleranzklasse):</strong></li>
