@@ -131,7 +131,7 @@ To verify that each function in main.py behaves as expected, tests were conducte
 ### Testing Functions in main.py:
 <ul>
     <li><strong>haupt_menu_anzeigen():</strong></li>
-    <p>Tested with different inputs, including options that are not listed. Ensured it correctly handles invalid inputs and shows the exception messasges.</p>
+    <p>Tested with different inputs, including options that are not listed. Ensured it correctly handles invalid inputs and shows the exception correct message for each input.</p>
     <br>
     <li><strong>toleranz_menu_anzeigen():</strong></li>
     <p>Tested with valid and invalid inputs. Ensured it goes do the main menu if the user chooses 5.</p>
